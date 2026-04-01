@@ -1,3 +1,16 @@
 spring:
   application:
     name: product-service
+  mongodb:
+    host: ${MONGODB_HOST:localhost}
+    port: ${MONGODB_PORT:27017}
+    database: ${MONGODB_DATABASE:product-service}
+    username: ${MONGODB_USERNAME:root}
+    password: ${MONGODB_PASSWORD:password}
+    authentication-database: ${MONGODB_AUTHENTICATION_DATABASE:admin}
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss"
+    time-zone: "Asia/Ho_Chi_Minh"
+    deserialization:
+      fail-on-unknown-properties: false
+      use-big-decimal-for-floats: true
