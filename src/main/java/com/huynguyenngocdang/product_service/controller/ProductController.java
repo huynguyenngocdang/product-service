@@ -35,7 +35,7 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<PageResponse<ProductResponse>> findByCriteria(
+    public ResponseEntity<ResponseApi<PageResponse<ProductResponse>>> findByCriteria(
             @RequestParam(required = false) String keySearch,
             @RequestParam(required = false) BigDecimal priceMin,
             @RequestParam(required = false) BigDecimal priceMax,
@@ -44,7 +44,7 @@ public class ProductController {
     ) {
         ProductCriteria criteria = new ProductCriteria(keySearch, priceMin, priceMax);
         Pageable pageable = PageRequest.of(pageNumber, pageSize);
-        return ResponseEntity.ok(productService.findByCriteria(criteria, pageable));
+        return ResponseEntity.ok(ResponseApi.success(productService.findByCriteria(criteria, pageable)));
     }
 
     @PostMapping
