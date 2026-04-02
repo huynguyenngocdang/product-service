@@ -1,7 +1,8 @@
 package com.huynguyenngocdang.product_service.controller;
 
-import com.huynguyenngocdang.product_service.common.PageResponse;
-import com.huynguyenngocdang.product_service.common.ResponseApi;
+
+import com.huynguyenngocdang.commons.common.PageResponse;
+import com.huynguyenngocdang.commons.common.ResponseApi;
 import com.huynguyenngocdang.product_service.dto.ProductCriteria;
 import com.huynguyenngocdang.product_service.dto.ProductRequest;
 import com.huynguyenngocdang.product_service.dto.ProductResponse;

@@ -1,6 +1,6 @@
 package com.huynguyenngocdang.product_service.service.impl;
 
-import com.huynguyenngocdang.product_service.common.PageResponse;
+import com.huynguyenngocdang.commons.common.PageResponse;
 import com.huynguyenngocdang.product_service.dto.ProductCriteria;
 import com.huynguyenngocdang.product_service.dto.ProductRequest;
 import com.huynguyenngocdang.product_service.dto.ProductResponse;
